@@ -1,0 +1,130 @@
+/* You can add global styles to this file, and also import other style files */
+nav.navbar {
+    padding: 0;
+}
+nav.navbar ul.navbar-nav {
+    margin: 0 auto;
+}
+nav.navbar ul.navbar-nav a.nav-link {
+    font-weight: 700;
+    color: #898989;
+    font-size: 15px;
+    padding: 15px 15px;
+    border-bottom: 3px solid transparent;
+        white-space: nowrap;
+}
+nav.navbar ul.navbar-nav div + div {
+    border-left: 1px solid #ededed;
+}
+nav.navbar ul.navbar-nav a.nav-link:hover {
+    color: #12365c;
+    border-bottom: 2px solid #12365c;
+}
+nav.navbar ul.navbar-nav a.nav-link.active {
+    border-bottom: 2px solid #12365c;
+}
+nav.navbar ul.navbar-nav .nav-item.dropdown.show > a{
+    color: #12365c;
+    border-bottom: 2px solid #12365c;
+}
+nav.navbar ul.navbar-nav .nav-item.dropdown .dropdown-menu {
+    border: 0;
+    width: 100%;
+    min-width: auto;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 10%);
+    border-radius: 0;
+}
+nav.navbar ul.navbar-nav .nav-item.dropdown .dropdown-menu a {
+    border: 0;
+    padding: 10px 10px;
+    font-weight: 700;
+    color: #898989;
+    font-size: 15px;
+}
+nav.navbar ul.navbar-nav .nav-item.dropdown .dropdown-menu a:hover {
+    color: #12365c;
+}
+nav.navbar ul.navbar-nav .nav-item.dropdown.show > a:after {
+    transform: rotate(
+180deg
+);
+}
+.show-more::after{
+    display: none !important;
+}
+.sub-dropdown > .sub-dropdown-menu {
+    display: none;
+}
+.sub-dropdown .sub-dropdown-menu {
+    background: #f8f9fa;
+}
+.sub-dropdown > .nav-link:after {
+    content: '';
+    display: inline-block;
+    margin-left: .255em;
+    vertical-align: .255em;
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+}
+.sub-dropdown .sub-dropdown-menu a {
+    width: 100%;
+    display: block;
+}
+.multiple-dropdown {
+    position: relative;
+}
+.multiple-dropdown > ul.navbar-nav {
+    flex-wrap: wrap;
+    position: absolute;
+    top: 100%;
+    border: 0;
+    width: 100%;
+    min-width: 150px;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 10%);
+    border-radius: 0;
+}
+.multiple-dropdown > ul.navbar-nav > div {
+    width: 100%;
+}
+nav.navbar ul.navbar-nav .dropdown-menu {
+    position: initial !important;
+    box-shadow: none !important;
+    background: #f8f9fa;
+}
+.multiple-dropdown > ul.navbar-nav {
+    display: none;
+}
+.multiple-dropdown.open > ul.navbar-nav {
+    display: flex;
+}
+@media(max-width:991px){
+    nav.navbar {
+        background: transparent !important;
+    }
+    nav.navbar button.navbar-toggler {
+    margin: 15px;
+}
+.navbar-collapse {
+    position: absolute;
+    left: 0;
+    top: 70px;
+    background: #f8f9fa;
+    display: block  !important;
+    height: calc(100vh - 70px) !important;
+    transition: all .3s;
+    width: 0;
+    overflow: hidden;
+    display: block !important;
+}
+.navbar-collapse.show {
+    width: 50%;
+    transition: all .3s;
+    transition: all .3s;
+}
+}
